@@ -1,5 +1,5 @@
 # FC-fans 
-FC-fans it's a **fake** fanpage made using Bootstrap, basic JavaScript in 2018 and running on Heroku since 2020.
+FC-fans it's a **fake** fanpage made using Bootstrap, basic JavaScript in 2018, updated and uploaded on Heroku in 2020.
 
 The main idea of the webpage it's to use bootstrap characteristics, good practices when coding and basic JS knowledge
 
