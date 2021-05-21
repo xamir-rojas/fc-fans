@@ -1,0 +1,82 @@
+/* estilos globales */
+/* se define un espacio entre 
+la parte superiror y el contenido de cada sección
+para que al usar los enlaces en el navbar
+se puedan ver los titulos de cada sección  
+*/
+section{
+  padding-top: 90px;
+}
+/* estilos del header */
+#header{
+  background-color: #a50044 !important;
+}
+/* limitar tamaño del logo*/
+#header img{
+  max-width: 50px;
+}
+/* color del header cuando el usuario hace scroll */
+#header.different
+{
+  background-color: #edbb00 !important;
+}
+
+/* estilos de la sección main */
+
+/* limitar tamaño de las imagenes en el carousel*/
+#main .carousel-inner img{
+  height: 70vh;
+  object-fit: cover;
+}
+#carousel{
+  position: relative;
+}
+/* capa encima del carousel para que el texto resalte mejor*/
+#carousel .overlay{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+#carousel .overlay .container ,
+#carousel .overlay .row{
+  height: 100%;
+}
+
+/*estilos de la sección cards */
+
+/* se puso que los textos de la posición de cada jugador
+estuvieran al lado derecho */
+.badges {
+  text-align: right;
+}
+
+/* estilos de la sección more-info */
+
+#more-info{
+  background-color: #a50044;
+  color: #FFFFFF;
+}
+#more-info img{
+  max-width: 100%;
+}
+/* estilos de la sección de la tabla */
+#fc-table{
+  background-color: #a50044; 
+  color: #FFFFFF ;
+}
+#fc-table table{
+  color: #FFFFFF !important;
+}
+
+/* estilos de la sección footer */
+#footer{
+  background-color: #004d98;
+}
+#footer a {
+  color: #FFFFFF;
+}
+

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- FC CSS -->
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" type="text/css" href="fc-styles.css">
+  <title>FC Barcelona! - FANS</title>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="84">
+
+ <!-- header	 -->	
+ <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+     <img id="logo" src="fc-logo.png" alt="Logo del FC Barcelona">  <strong>FANS!</strong>
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cards">Jugadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#more-info">Historia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#fc-form">Inscripción</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">tickets</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- /header	 -->
+
+<!-- main	 -->
+<main id="main">
+	<div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="image.png" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img1.jpg" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img2.jpg" alt="Third slide?">
+			</div>
+		</div>
+		<div class="overlay">
+			<div class="container">
+				<div class="row align-items-center">
+          <!-- Contenido Main-->
+          <!-- col-tamaño-de la pantalla - tamaño de la columna -->
+					<div class="col-md-6 offset-md-6 text-center text-md-right">
+						<h1>El club de fans #1</h1>
+            <!-- d-none quita el texto pantalla pequeña
+              d-md-block deja el texto para pantallas md -lg -->
+						<p class="d-none d-md-block">Somos el mejor club de aficionados, contamos con descuentos y eventos especiales</p>
+						<a href="#" class="btn btn-outline-warning">más</a>
+						<button type="button" class="btn btn-danger" onclick="contador()">Ir a la tienda</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- /main	 -->
+
+<!-- cards   -->
+<section id="cards" class="fc-cards mt-4 mb-4">
+  <div class="container">
+    <div class="row"> 
+      <div class="col text-center">        
+        <h2>Jugadores de la semana</h2>
+      </div> 
+    </div>
+    <div class="row">
+      <!-- carta jugador Messi -->
+      <!-- 
+      * col-md-4 
+      messi ocupa 4 espacios de 12 si la pantalla es mediana
+      * col-lg-3
+      messi ocupa 3 espacios de 12 si la pantalla es larga
+    -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+        <div class="card" >
+          <!-- imagen de messi-->
+          <img class="card-img-top" src="messi.jpg" alt="Card image 1"> 
+          
+          <div class="card-body">
+            <!-- posición de messi 
+              badge-danger le da el color rojo
+            -->
+            <div class="badges">
+              <span class="badge badge-danger">Delantero</span>
+            </div>
+
+            <h5 class="card-title ">Leo Messi</h5>
+            <p class="card-text">Nacido en Rosario (Argentina) el 24 de junio de 1987, comienza su carrera deportiva en 1995 con el Newell 's Old Boys.</p>
+          </div>
+        </div>
+      </div>
+      <!--Dembele -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+        <div class="card">
+          <img class="card-img-top" src="dembele.png" alt="Card image 1"> 
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge badge-danger">Delantero</span>
+            </div>
+            <h5 class="card-title "> Dembélé</h5>
+            <p class="card-text">Nacido el 15 mayo de 1997 en Vernon (Francia), Ousmane Dembélé es uno de los mejores jugadores jóvenes del mundo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Stegen -->
+      <div  class="col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+        <div class="card">
+          <img class="card-img-top" src="stegen.png" alt="Card image 1"> 
+          <div class="card-body">     
+            <div class="badges">
+              <span class="badge badge-warning">Portero</span>
+            </div>
+            <h5 class="card-title ">Stegen </h5>
+            <p class="card-text"> el alemán despuntaba desde muy joven como uno de los porteros más prometedores del continente europeo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pique -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+        <div class="card">
+          <img class="card-img-top" src="pique.png" alt="Card image 1"> 
+          <div class="card-body">
+
+            <div class="badges">
+              <span class="badge badge-primary">Defensa</span>
+            </div>
+            <h5 class="card-title ">Piqué</h5>
+            <p class="card-text">De muy pequeño ingresa en el torneo social del FC Barcelona y con 10 años se inicia en el fútbol.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+<!-- /cards   -->
+
+<!-- More info   -->
+<section id="more-info">
+  <!-- el container ocupa todo el espacio -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Logo 
+        col-lg-6 logo ocupa 6 espacios de 12 cuando la pantalla larga
+        col-12 logo ocupa 12 espacios de 12 cuando la pantalla es pequeña
+      -->
+      <div class="col col-12 col-lg-6 pl-0">
+        <img src="fc-logo.png" alt="imagen" />
+      </div>
+      <!-- Historia del club -->
+      <div class="col col-12 col-lg-6 pt-4 pb-4">
+        <h2 >Historia del club</h2>
+        <p>El Fútbol Club Barcelona (en catalán, Futbol Club Barcelona), conocido popularmente como Barça,n. 1​ es una entidad polideportiva con sede en Barcelona, España. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903.8​9​10​ Es uno de los cuatro clubes profesionales de España junto a Real Madrid Club de Fútbol, Athletic Club y Club Atlético Osasuna que no es sociedad anónima, de manera que la propiedad del club recae en sus socios.
+        </p>          
+        <a href="https://www.fcbarcelona.es/es/" class="btn btn-outline-light ">Página oficial</a>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- /More info   -->
+
+
+  <!-- formulario   -->
+  <section id="fc-form">
+    <div class="container pt-4 pb-4">
+
+      <div class="row">
+        <div class="col text-center">
+          <!-- texto antes del titulo en Mayusculas(Uppercase)-->
+          <small class="text-uppercase">contactanos para ser parte de nuestro club de fans </small>
+          <!-- titulo-->
+          <h2>Solicitud</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          Te compartiremos noticias y notificaremos de todos los partidos
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- 
+          col-md-10 ocupa 10 espacios de 12 en pantalla mediana
+          offset-md-1 deja un espacio a la izquierda de 1
+          Es decir el formulario
+          ocupa el 80% de la pantalla
+        -->
+        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+          <form>
+            <div class="form-row">
+              <!-- input 
+                col-12 pantalla  es pequeña
+                col-md-6  pantalla es mediana
+              -->
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Primer nombre">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12 col-md-6">
+                <input type="email" class="form-control" placeholder="Email" autofocus>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <textarea name="text" class="form-control form-control-lg" placeholder="Cuentanos tu historia con el barcelona!"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button id="registrar" type="submit" class="btn btn-warning btn-block" onclick=""> Enviar </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- /form   --> 
+
+
+  <!-- table -->
+  <section id="fc-table" class="pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="text-uppercase">Estos son nuestros eventos públicos del mes </small>
+          <h2>Próximamente</h2>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table">
+          <thead >
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre del evento</th>
+              <th scope="col">Lugar</th>
+              <th scope="col">Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Conferencia de Fans</td>
+              <td>Corferias</td>
+              <td>2/2/2021</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td> Torneo de futbol del club </td>
+              <td> Parque simón bolivar </td>
+              <td> 7/7/2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row mb-1">
+        <div class="col text-center">
+          <small>Una pista de un evento especial</small>
+        </div>
+      </div>
+      <!-- audio -->
+      <div class="row">
+        <!-- 
+        col-12 pequeña ocupa todo el espacio
+        col-md-4 mediana ocupa 1/3 del espacio
+        -->
+        <div class="col-12 col-md-4 offset-md-4">
+          <audio controls style="width:100%;">
+          <source src="sample.mp3">
+          </audio>
+        </div>
+        </div>
+    </div>  
+  </section>
+  <!-- /table   -->
+  <!-- /Juego   -->
+   <section id="fc-game">
+    <div class="container pt-4 pb-4">
+
+      <div class="row">
+        <div class="col text-center">
+          <!-- texto antes del titulo en Mayusculas(Uppercase)-->
+          <small class="text-uppercase">¿Estás listo para probar tus habilidades?  </small>
+          <!-- titulo-->
+          <h2>Juego</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          pulsa start para comenzar! 
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3" >
+          <button class="col btn btn-warning" id="boton-empezar" data-att ="1" >
+            Start
+          </button>
+        </div>
+      </div> 
+
+      <div class="row mt-4"> 
+        <div id="juego" class="col-12 col-md-6 offset-md-3">
+          <div id="quiz" >
+            
+          </div>
+          <hr>
+          <button id="submit" class="col btn btn-success">Evaluar</button>
+          <div id="results" class="text-center"></div>
+        </div>
+      </div> 
+    </div>
+  </section> 
+  <!-- /Juego   -->
+  <!-- footer  o pie de página -->
+
+  <footer id="footer" class="pb-4 pt-4">
+   <div class="container">
+    <div class="row">
+      <!--
+        col-12 pequeña ocupa todo el espacio
+        col-lg se reparten equitativamente
+      --> 
+     <div class="col-12 col-lg"><a href="">Acerca de nosotros</a></div>
+     <div class="col-12 col-lg"><a href="">Contactanos</a></div>
+     <div class="col-12 col-lg"><a href="">Redes sociales</a></div>
+   </div>
+ </div>
+</footer>
+<!-- /footer   -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- mi javascript -->
+<script src="index.js"></script>
+</body>
+</html>
